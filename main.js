@@ -14,7 +14,7 @@ var margin_height= 10;
 var mouseX = 0;
 var mouseY = 0;
 var cur_mode;
-var select_color;
+var select_color ="R";
 var button_l=false;
 var icolor =['R','G','B','Y','P','H','J','D'];
 var otirand = [true,true,true,true,true,true,true,true];
