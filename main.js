@@ -51,7 +51,7 @@ function init(){
     console.log("event listener is not found");
   }
   ctx = canvas.getContext('2d');
-
+  cur_mode = 'orbs'
   margin_width =margin_width  - canvas.style.margin;
   margin_height=margin_height - canvas.style.margin;
   canvas.width = margin_width*2 + board.width*orb_size;
@@ -528,6 +528,7 @@ function set_mode(mode){
 function set_color(clr){
   cur_mode="orbs"
     select_color = clr;
+    history.push(board.cell);
   console.log(select_color);
 }
 // ボードの大きさを変更
