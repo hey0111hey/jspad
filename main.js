@@ -13,7 +13,7 @@ var margin_width = 10;
 var margin_height= 10;
 var mouseX = 0;
 var mouseY = 0;
-var cur_mode = 'orbs';
+var cur_mode;
 var select_color;
 var button_l=false;
 var icolor =['R','G','B','Y','P','H','J','D'];
