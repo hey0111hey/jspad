@@ -65,8 +65,8 @@ function init(){
       arg[kv[0]]=kv[1];
   }
   
-  if(typeof arg.baord != undefined){
-    boardURL = arg.board;
+  if(typeof arg.baord !== undefined){
+    boardURL = parseInt(arg.board);
     console.log(arg.board);
   }
   board.init();
