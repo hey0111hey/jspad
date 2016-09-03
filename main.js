@@ -57,6 +57,13 @@ function init(){
   canvas.width = margin_width*2 + board.width*orb_size;
   canvas.height= margin_height*2 + board.height*orb_size;
 
+  var arg = new Object;
+  var pair=location.search.substring(1).split('&');
+  for(var i=0;pair[i];i++) {
+      var kv = pair[i].split('=');
+      arg[kv[0]]=kv[1];
+  }
+  console.log(arg.board);
   board.init();
   result.init();
   history.init();
