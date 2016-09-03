@@ -20,6 +20,7 @@ var icolor =['R','G','B','Y','P','H','J','D'];
 var otirand = [true,true,true,true,true,true,true,true];
 var step_count=0;
 var isKepri = false;
+var boardURL = 0;
 
 function init(){
   canvas = document.getElementById('maincanvas');
@@ -63,7 +64,10 @@ function init(){
       var kv = pair[i].split('=');
       arg[kv[0]]=kv[1];
   }
-  console.log(arg.board);
+  if(arg.baord !== undefined){
+    boardURL = arg.board;
+    console.log(arg.board);
+  }
   board.init();
   result.init();
   history.init();
@@ -225,9 +229,9 @@ board.init = function(){
   for(var width = 0; width < board.width ; width++){
     board.cell[width] = new Array();
     for(var height =0; height<board.height ; height++){
-      board.cell[width][height]='B';
+      board.cell[width][height]=icolor[boardURL%10];
+      boardURL/=10;
     }
-      board.cell[width][0]='R';
   }
   console.log("board initialize is finished .")
 }
