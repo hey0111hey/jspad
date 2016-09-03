@@ -501,7 +501,7 @@ board.elace =function(isKepri, result){
         }
         if(count !== 5) isPlus = false; 
         console.log(count);
-        if(isKepri&&count<=3){
+        if(isKepri&&count<=4){
           // erace_stateからtmpのドロップを消す
           for(var countW = 1; countW < board.width +1 ; countW++){
             for(var countH = 1; countH < board.height +1 ; countH++){
