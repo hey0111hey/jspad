@@ -70,10 +70,8 @@ function init(){
     console.log(boardURL);
   }
   if(typeof arg.Kepri ){
-    if(arg.Kepri == true){
-    isKepri = true;
-    }
-    console.log(arg.Kepri);
+    isKepri = Boolean.valueOf(arg.Kepri);
+    console.log(isKepri);
   }
   board.init();
   result.init();
