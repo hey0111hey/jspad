@@ -234,6 +234,7 @@ board.init = function(){
       boardURL/=10;
     }
   }
+  console.log(baord.cell);
   console.log("board initialize is finished .")
 }
 
