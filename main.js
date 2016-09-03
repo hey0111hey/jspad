@@ -64,7 +64,8 @@ function init(){
       var kv = pair[i].split('=');
       arg[kv[0]]=kv[1];
   }
-  if(arg.baord != undefined){
+  
+  if(typeof arg.baord != undefined){
     boardURL = arg.board;
     console.log(arg.board);
   }
