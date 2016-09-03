@@ -67,7 +67,7 @@ function init(){
   
   if(typeof arg.baord !== undefined){
     boardURL = parseInt(arg.board);
-    console.log(arg.board);
+    console.log(boardURL);
   }
   board.init();
   result.init();
