@@ -69,6 +69,10 @@ function init(){
     boardURL = arg.board;
     console.log(boardURL);
   }
+  if(typeof arg.Kepri !== undefined){
+    isKepri = arg.Kepri;
+    console.log(isKepri);
+  }
   board.init();
   result.init();
   history.init();
