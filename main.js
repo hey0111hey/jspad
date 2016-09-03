@@ -73,7 +73,7 @@ function init(){
     if(arg.Kepri == true){
     isKepri = true;
     }
-    console.log(isKepri);
+    console.log(arg.Kepri);
   }
   board.init();
   result.init();
