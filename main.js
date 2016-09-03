@@ -66,7 +66,7 @@ function init(){
   }
   
   if(typeof arg.baord !== undefined){
-    boardURL = parseInt(arg.board);
+    boardURL = arg.board;
     console.log(boardURL);
   }
   board.init();
@@ -230,11 +230,10 @@ board.init = function(){
   for(var width = 0; width < board.width ; width++){
     board.cell[width] = new Array();
     for(var height =0; height<board.height ; height++){
-      board.cell[width][height]=icolor[boardURL%10];
-      boardURL/=10;
+      board.cell[width][height]=icolor[boardURL.charAt(height*board.width+width)];
     }
   }
-  console.log(baord.cell);
+  console.log(board.cell);
   console.log("board initialize is finished .")
 }
 
